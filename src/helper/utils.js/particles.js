@@ -1,4 +1,4 @@
-export default{
+const particles = {
     background: {
         color: {
             value: "#1d1d1d1",
@@ -70,3 +70,4 @@ export default{
     },
     detectRetina: true,
 }
+export default particles
