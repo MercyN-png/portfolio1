@@ -1,0 +1,88 @@
+
+// Define styles for the navbar
+.navbar {
+  background-color: #333;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+}
+  // Define styles for the navbar container
+.nav_container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    padding: 0px 20px;
+}
+    // Define styles for the logo
+    .navbar_container_logo {
+      color:#00CC91;
+      cursor: pointer;
+    }
+
+    // Define styles for the menu
+    .navbar_container_menu {
+      display: flex;
+      flex-direction:row ;
+      list-style: none;
+      text-align: center;
+    }
+    .navbar_container_menu_item {
+        line-height: 40px;
+        margin-right: 1.5rem;
+        font-size: 1.6rem;
+        &::after{
+          content: '';
+          display: block;
+          height: 3px;
+          width: 0;
+          background: transparent;
+          transition:all 0.5s ease ;
+        }
+        &:hover::after{
+          width: 100%;
+          background: #00CC91;
+        }
+        .navbar_container_menu_item_links{
+          color: #00CC91;
+          text-decoration: none;
+          padding: 0;
+        }
+      }
+.nav_icon{
+  display: none;
+}
+@media only screen and (max-width:768){
+  .navbar_container_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border-top: #fff;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    &.active{
+      background: #181818;
+      left:0px ;
+      opacity: 1;
+    }
+    .navbar_container_menu_item{
+      border-bottom: 1px solid #282828;
+      margin: 0px;
+      padding: 20px 0px;
+    }
+  }
+  .nav_icon{
+    display: block;
+    cursor:pointer ;
+    color: #00CC91;
+  }
+
+  
+}

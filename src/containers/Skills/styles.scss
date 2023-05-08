@@ -1,0 +1,42 @@
+.skills{
+    .skills__content-wrapper{
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+
+        .skills__content-wrapper__inner-Content{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .skills__content-wrapper__inner-Content__category-text{
+                display: inline-block;
+                color: #00CC91;
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 1rem;
+                letter-spacing: 0.5px;
+                position: relative;
+                text-transform: uppercase;
+                padding: 5px 10px;
+                border-bottom: 2px solid #00CC91;
+            }
+            div{
+                width: 100%;
+        
+            }
+            .progressbar-wrapper{
+                padding: 5px 0px 0px 0px;
+
+                p{
+                    font-size: 1.6rem;
+                    margin: 0 0 10px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    color: #00CC91;
+                }
+            }
+        }
+    }
+}
